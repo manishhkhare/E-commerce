@@ -18,11 +18,12 @@ function App() {
         <Route path="/Welcome" element={<Forms/>}/>
     
         <Route path="/Cart" element={<Cart />} />
-        <Route path="/Home" element={<HomePage/>}/>
+        <Route path="*" element={<HomePage/>}/>
       
       </Routes>
    
-</>
+    </>
+    
     
     
   );
