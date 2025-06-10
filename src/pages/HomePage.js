@@ -3,7 +3,7 @@ import { Cart }  from './Cart'
 import Shoppingitems from './Shoppingitems'
 import  SearchBar  from '../Component/SearchBar'
 
-export default function HomePage({searchVarient,isopen}) { 
+export default function HomePage({isopen,addItems,setAddItems}) { 
 
   return (
       <>
@@ -11,7 +11,8 @@ export default function HomePage({searchVarient,isopen}) {
       <SearchBar isopen={isopen} />
         <div className='homeContainer'> 
           
-          <Shoppingitems  />
+          <Shoppingitems addItems={addItems} setAddItems={setAddItems}  />
+          
           
           </div> 
           </div>

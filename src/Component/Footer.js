@@ -1,17 +1,32 @@
-import React from 'react'
+import React from 'react';
 
-export default function Footer() {
+const Footer = () => {
   return (
-      <>
-      <nav class="navbar bg-body-tertiary">
-            <div className="container-fluid">
-            <a className="navbar-brand">Navbar</a>
-                <form className="d-flex" role="search">
-                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button className="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-      </>
-  )
-}
+    <footer className="footer">
+      <div className="footer-section">
+        <h4>Shopping</h4>
+        <p>© {new Date().getFullYear()} All rights reserved.</p>
+      </div>
+
+      <div className="footer-section">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div className="footer-section">
+        <h5>Follow Us</h5>
+        <div className="social-icons">
+          <a href="#"><i className="fab fa-facebook-f"></i></a>
+          <a href="#"><i className="fab fa-instagram"></i></a>
+          <a href="#"><i className="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

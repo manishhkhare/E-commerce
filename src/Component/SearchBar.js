@@ -13,10 +13,11 @@ const SearchBar = ({ isopen }) => {
       opacity:0
     }
   }
-   console.log(isopen,"isopen or not", searchBarVarient)
+  //  console.log(isopen,"isopen or not", searchBarVarient)
   return (
       <>
       <motion.div variants={searchBarVarient}
+       
         animate={isopen?"open":"close"} className='searchBar'>
               <input type='text' className='form-control' placeholder='Search here'></input>
               <button type='button' className='btn 
