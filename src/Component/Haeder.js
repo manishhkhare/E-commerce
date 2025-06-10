@@ -63,14 +63,15 @@ export default function Haeder({ isopen, setIsopen }) {
               </ul>
             </div>
             <button className="navbar-toggler float-end border-0" type="button">
-              <span className="navbar-toggler-icon bg-transparent border-0 " />
+              <span className="navbar-toggler-icon bg-transparent border-0 p-0" />
             </button> 
+            {/* <div className='navBox'>NavBox</div> */}
           </div>
           <div classname="float-end">
             <div className="navbar-collapse collapse ">
                 <ul className="navbar-nav ps-0 pe-5">
         <li className="nav-item">
-              <Link to="/Home" className="nav-link  d-flex text-white" aria-current="page" ><Home/> Home</Link>
+              <Link to="/Home" className="nav-link d-flex text-white" aria-current="page" ><Home/> Home</Link>
              
         </li>
 
@@ -78,7 +79,7 @@ export default function Haeder({ isopen, setIsopen }) {
           <Link className="nav-link  d-flex text-white" aria-current="page" to="Notifications"><NotificationAddRounded/> Notifications</Link>
         </li>
         <li className="nav-item   text-white">
-                  <button className="border-0 pt-2  text-white bg-transparent d-flex" onClick={() => { setFilter(!filter) }}><DatasetTwoTone/> Filter</button>
+                  <button className="border-0 pt-2 btn text-white w-0 ps-0 pe-0 bg-transparent d-flex" onClick={() => { setFilter(!filter) }}><DatasetTwoTone/> Filter</button>
         </li>
         <li className="nav-item text-white">
           <Link className="nav-link  d-flex d-flex text-white" href="#"><ShoppingBag/>Orders</Link>
