@@ -222,11 +222,11 @@ export default function Forms() {
 
             {login && (
               <motion.div
-                className='w-100'
+                className='loginForm'
                 initial={{ scaleY: 1, x: 100 }}
                 animate={{ scaleY: 0.9, x: 0 }}
               >
-                <div className='card p-5 shadow rounded-4' style={{ maxWidth: '400px', margin: 'auto' }}>
+                <div className=' p-5 shadow rounded-4' >
                   <h2 className='text-center mb-4'>Sign In</h2>
                   <form className='w-100' onSubmit={handleLoginSubmit}>
                     <div className='mb-3 inputBox'>

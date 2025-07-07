@@ -12,7 +12,8 @@ body::-webkit-scrollbar{
 }
 .frontPage{ 
   min-height: 100vh;
-  padding: 20px;
+  padding: 0px;
+  margin: 0px;
   width: 100%;
   background-color: #27548A;
 }
@@ -25,7 +26,14 @@ body::-webkit-scrollbar{
   padding: 20px;
   gap: 10px;
   -ms-overflow-style: none;
-} 
+}   
+.loginForm{ 
+  height: 100;
+  background-color:#F8F6F6;
+  border-radius: 10px;
+
+}
+
 .forms::-webkit-scrollbar {
   scrollbar-width: 1px;
 
@@ -622,7 +630,7 @@ overlay-backdrop {
 }
 .navbar-nav > .nav-item{
 
-   display: flex !important;
+  display: flex !important;
   border-radius: 20px;
   transition: all 0.02 ease-in-out;
    
