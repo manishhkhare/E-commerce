@@ -1,8 +1,11 @@
 body{
   overflow-y: scroll !important;
   scrollbar-width: 0px;
-  background-color: #edeef0;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0px;
+  padding: 0px;
+  background-color:#F8F6F6;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    overflow: hidden;
  
 
 } 
@@ -11,11 +14,16 @@ body::-webkit-scrollbar{
   display: none;
 }
 .frontPage{ 
+
+  display: flex;
   min-height: 100vh;
-  padding: 0px;
-  margin: 0px;
   width: 100%;
-  background-color: #27548A;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  order:1px solid red;
+ 
+ 
 }
 .forms {
   background-color: #f8f6f6;
@@ -27,8 +35,10 @@ body::-webkit-scrollbar{
   gap: 10px;
   -ms-overflow-style: none;
 }   
-.loginForm{ 
+.loginForm { 
   height: 100;
+  min-width:200px !important ;
+  width: 400px  !important;
   background-color:#F8F6F6;
   border-radius: 10px;
 
@@ -106,13 +116,14 @@ body::-webkit-scrollbar{
     align-items: center;
     justify-content: space-between;
     color: white;
-    height: 250px;
+    height: 240px;
     width: 100%;
+   
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
  }
  .box img {
-   height: 150px !important;
+   height: 140px !important;
    object-fit: contain;
    margin-bottom: 0.5em;
  }
@@ -486,8 +497,8 @@ body::-webkit-scrollbar{
   
 } 
 .footer {
-  display: flex;
-  justify-content: space-around;
+  display: flex; 
+  justify-content: space-between;
   flex-wrap: wrap;
   background-color: #222;
   color: #fff;
@@ -497,7 +508,7 @@ body::-webkit-scrollbar{
 
 .footer-section {
   margin: 10px;
-  min-width: 200px;
+  min-width: 100%;
 }
 
 .footer-section h4,
