@@ -28,11 +28,10 @@ export default function Header({ isopen, setIsopen }) {
     email: "",
   });
 
-  // if (toggle) {
-  //  alert("okk")
-  // }
-   console.log(toggle)
-
+  let logout = () => {
+    localStorage.removeItem('token')
+    navigate('/welcome')
+  }
   const handleApply = () => {
     alert("done");
   };
@@ -210,7 +209,8 @@ export default function Header({ isopen, setIsopen }) {
                   value={userData.email}
                   onChange={handleChange}
                 />
-              </div>
+              </div> 
+              <botton className="btn btn-danger rounded-0" onClick={()=>logout()}>Logout</botton>
             </div>
           </div>
         </motion.div>

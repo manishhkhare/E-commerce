@@ -79,7 +79,7 @@ export default function Forms() {
         if (res.status === 200) {
           toast.success('Login Successful!');
           localStorage.setItem('token', data.jwt);
-          navigate('/home');
+          navigate('/Home');
         } else if (res.status === 401) {
           toast.warn('Invalid Password');
         } else {
@@ -141,7 +141,7 @@ export default function Forms() {
             {registeration && (
               <motion.div
                 className='w-100 d-flex justify-content-center align-items-center'
-                initial={{ scaleY: 1, x: 100 }}
+                initial={{ scaleY: 1, x: -50 }}
                 animate={{ scaleY: 0.9, x: 0 }}
                 transition={{ duration: 0.3 }}
               >
@@ -197,7 +197,7 @@ export default function Forms() {
             {login && (
               <motion.div
                 className='loginForm w-100'
-                initial={{ scaleY: 1, x: 100 }}
+                initial={{ scaleY: 1, x: -50 }}
                 animate={{ scaleY: 0.9, x: 0 }}
                 transition={{ duration: 0.3 }}
               >
