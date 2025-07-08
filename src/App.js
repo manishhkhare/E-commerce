@@ -30,7 +30,7 @@ function App() {
     <>
       {!shouldHideHeader && !isErrorPage && <Haeder isopen={isopen} setIsopen={setIsopen} />}
       <ToastContainer position="top-center" />
-      {isErrorPage ? (
+      { isErrorPage ? (
         <ErrorPage />
       ) : (
         <Routes>
